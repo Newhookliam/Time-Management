@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9afcdcb935.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/Timeu.png">
+    <title>Project Management</title>
+</head>
+<body>
+    <!--Title and logo-->
+    <div id="title">
+        <div id="logoIcon">
+            <img src="/images/Timeu.png" alt="logo" style="width: 100px;">
+        </div>
+            <h1>Time Management and Tasks</h1>
+        <div class="navIcon">
+           <a href="profile.html"><i class="fa fa-id-badge fa-2x"></i></a> 
+           <a href="settings.html"><i class="fa fa-gear fa-2x"></i></a> 
+        </div>
+    </div>
+    <hr>
+    <!--start of navigation-->
+    <nav>
+        <div id="nav">
+            <!--Navigation buttons-->
+            <div class="navItems">
+                <a href=""><li>Login</li></a> 
+                <a href=""><li>Sign Up</li></a>
+                <a href=""><li>Projects</li></a>
+                <a href=""><li>Management</li></a>
+            </div>
+        </div>
+    </nav>
+    <!--End of navigation-->
+    <!--content left panel-->
+    <section class="newTask">
+        <a href="/">
+        <h4 class="taskNew">Add New Task</h4>
+        <button id="addNewTask"><i class="fa fa-plus fa-2x"></i></button>
+        </a>
+    </section>
+    <div id="popup">
+        <div class="popupText">
+            <form action="/" class="formDetail">
+                <h4>Task</h4>
+                <div>
+                <label for="important">Important</label>
+                <input type="checkbox" name="important" id="radImportant">
+                </div>
+                <div>
+                <label for="necessary">Necessary</label>
+                <input type="checkbox" name="necessary" id="radNecessary">
+                </div>
+                <input type="text" id="detail" style="width: 100%; padding-bottom: 20%;">
+
+                <button class="submitBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+<aside id="contentMenu">
+    <div class="contentHeader">
+        <h4>Contents</h4>
+        <p style="padding-top: 10px;">Last Completed Tasks</p>
+    </div>
+    <div>
+        <ol id="contentList">
+
+        </ol>
+    </div>
+</aside>
+    <!--content panel finish-->
+    <section id="Main">
+        <hr>
+        <div class="cardSection">
+            <div class="card">
+                <h3>Important</h3>
+                <hr>
+                <ol id="important">
+
+                </ol>
+            </div>
+        </div>
+        <div class="cardSection">
+            <div class="card">
+                <h3>Necessary</h3>
+                <hr>
+                <ol id="necessary">
+                    
+                </ol>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
