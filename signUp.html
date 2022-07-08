@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div id="title">
+        <div id="logoIcon">
+            <img src="/images/Timeu.png" alt="logo" style="width: 100px;">
+        </div>
+            <h1>Time Management and Tasks</h1>
+        <div class="navIcon">
+           <a href="profile.html"><i class="fa fa-id-badge fa-2x"></i></a> 
+           <a href="settings.html"><i class="fa fa-gear fa-2x"></i></a> 
+        </div>
+    </div>
+    <nav id="flexNav">
+        <h1>Please Sign Up</h1>
+    </nav>
+
+    <main id="mainContent">
+        <!--Already have an Account-->
+        <div id="accountHolder">
+            <h3>Already have an account??</h3>
+            <a href="login.html"><button>Login</button></a> 
+        </div>
+        <!--sign up form-->
+        <form action="/index.html" id="formSubmit">
+    
+            <h3>Please complete the sign up form below</h3>
+    
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" important>
+    
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" important>
+    
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" important>
+    
+            <label for="confirmEmail">Confirm Email</label>
+            <input type="email" name="confirmEmail" id="confirmEmail" important>
+    
+            <label for="password">Create Password</label>
+            <input type="passowrd" name="password" id="password">
+    
+            <button>Submit</button>
+        </form>
+    </main>
+</body>
+</html>
