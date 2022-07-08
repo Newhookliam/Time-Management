@@ -71,6 +71,7 @@ nav {
     justify-content: space-around;
     gap: 100px;
     margin-left: 220px;
+    margin-right: 30px;
 }
 
 #important, #necessary {
@@ -101,8 +102,11 @@ nav {
 }
 
 .cardSection li {
+    margin-left: 20px;
+    width: 90%;
     font-size: 1.2em;
     color: red;
+    border-bottom: 1px solid #000;
 }
 
 .navIcon {
