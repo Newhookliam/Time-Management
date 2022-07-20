@@ -168,14 +168,9 @@ nav {
   }
 
   #Main {
-    margin-left: 210px;
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    gap: 0;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: grid; 
+    grid-template-columns: 3 1fr;
+    gap: 200px;
   }
 
   .cardSection {
