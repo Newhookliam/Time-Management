@@ -44,10 +44,12 @@ important.addEventListener('click', function (e) {
     const remove = e.target.nodeName === "LI" && e.target.remove();
     const completeTask = document.querySelector('#contentList');
     const completeLi = document.createElement('LI');
-    completeLi.append(remove);
-    console.log(completeLi.value);
-    completeTask.append(completeLi);
+    completeLi.append(LI);
+    return completeLi.value;
 })
+
+
+
 necessary.addEventListener('click', function (e) {
     const remove = e.target.nodeName === "LI" && e.target.remove();
     const completeTask = document.querySelector('#contentList');

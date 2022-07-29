@@ -36,12 +36,6 @@
     </nav>
     <!--End of navigation-->
     <!--content left panel-->
-    <section class="newTask">
-        <a href="/">
-        <h4 class="taskNew">Add New Task</h4>
-        <button id="addNewTask"><i class="fa fa-plus fa-2x"></i></button>
-        </a>
-    </section>
     <div id="popup">
         <div class="popupText">
             <form action="/" class="formDetail">
@@ -61,8 +55,14 @@
         </div>
     </div>
     <!--content panel finish-->
-    <section id="Main">
+    <main id="Main">
         <aside id="contentMenu">
+            <section class="newTask">
+                <a href="/">
+                    <h4 class="taskNew">Add New Task</h4>
+                    <button id="addNewTask"><i class="fa fa-plus fa-2x"></i></button>
+                    </a>
+            </section>
             <div class="contentHeader">
                 <h4>Contents</h4>
                 <p style="padding-top: 10px;">Last Completed Tasks</p>
@@ -73,26 +73,25 @@
                 </ol>
             </div>
         </aside>
-        <hr>
-        <div class="cardSection">
-            <div class="card">
-                <h3>Important</h3>
+        <div>
+            <section class="important">
+                <h2>Important</h2>
                 <hr>
-                <ol id="important">
+                <ul id="important">
 
-                </ol>
-            </div>
+                </ul>
+            </section>
         </div>
-        <div class="cardSection">
-            <div class="card">
-                <h3>Necessary</h3>
+        <div>
+            <section class="lessImportant">
+                <h2>Less-Important</h2>
                 <hr>
-                <ol id="necessary">
-                    
-                </ol>
-            </div>
+                <ul id="lessImportant">
+
+                </ul>
+            </section>
         </div>
-    </section>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>

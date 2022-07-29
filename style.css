@@ -49,10 +49,9 @@ nav {
 
 #contentMenu {
     background-color: lightgray;
-    margin-top: 10px;
-    width: 200px;
+    width: 300px;
     height: 100vh;
-    float: left;
+    justify-self: center;
 }
 
 .contentHeader {
@@ -65,12 +64,12 @@ nav {
     text-align: center;
 }
 
-#important, #necessary {
-    align-items: start;
+.important {
+    text-align: center;
 }
 
-.newTask {
-    width: 200px;
+.lessImportant {
+    text-align: center;
 }
 
 .newTask i {
@@ -98,9 +97,15 @@ nav {
     align-self: center;
 }
 
+section {
+    text-align: center;
+
+}
+
 .newTask {
-    padding-left: 40px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .newTask h4 {
@@ -109,9 +114,8 @@ nav {
 }
 
 .newTask button {
-    padding-left: 40px;
     border: none;
-    background-color: white;
+    background-color: lightgrey;
     color: black;
     cursor: pointer;
 }
@@ -126,8 +130,8 @@ nav {
 #popup {
     width: 300px;
     position: relative;
-    top: 100px;
-    left: 30px;
+    top: 150px;
+    left: 100px;
     display: inline-block;
     cursor: pointer;
     padding-bottom: 10px;
@@ -136,7 +140,7 @@ nav {
 #popup .popupText {
     width: 300px;
     visibility: hidden;
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.321);
     color: #000;
     border-radius: 6px;
     padding: 8px 0;
@@ -167,11 +171,12 @@ nav {
     padding: 0;
   }
 
-  #Main {
-    display: grid; 
-    grid-template-columns: 3 1fr;
-    gap: 200px;
-  }
+#Main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    grid-auto-flow: column;
+}
 
   .cardSection {
     width: 50%;
@@ -182,7 +187,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+
   }
 
   .card {
