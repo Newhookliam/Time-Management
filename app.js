@@ -2,7 +2,7 @@ const btnTask = document.querySelector('.newTask');
 const radImportant = document.querySelector('#radImportant')
 const important = document.querySelector('#important');
 const radNecessary = document.querySelector('#radNecessary')
-const necessary = document.querySelector('#necessary');
+const necessary = document.querySelector('#lessImportant');
 const submitBtn = document.querySelector('.submitBtn');
 const input = document.querySelector('#detail');
 const popup = document.querySelector('#popup');
@@ -40,20 +40,22 @@ submitBtn.addEventListener('click', function (e) {
     }
 });
 
+
 important.addEventListener('click', function (e) {
     const remove = e.target.nodeName === "LI" && e.target.remove();
     const completeTask = document.querySelector('#contentList');
     const completeLi = document.createElement('LI');
-    completeLi.append(LI);
-    return completeLi.value;
-})
-
+    completeLi.append(e.target);
+    completeTask.append(completeLi);
+    return completeTask;
+});
 
 
 necessary.addEventListener('click', function (e) {
     const remove = e.target.nodeName === "LI" && e.target.remove();
     const completeTask = document.querySelector('#contentList');
     const completeLi = document.createElement('LI');
-    completeLi.append(remove);
+    completeLi.append(e.target);
     completeTask.append(completeLi);
-})
+    return completeTask;
+});
