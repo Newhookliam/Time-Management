@@ -1,4 +1,4 @@
-# Time-Management
+# Time-Management AKA TimeU
 
 To aid in keeping track of your to do list and management tasks throughout the day. 
 
