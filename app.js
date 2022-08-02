@@ -27,6 +27,7 @@ submitBtn.addEventListener('click', function (e) {
         const newLi = document.createElement('LI');
         newLi.innerText = text;
         important.append(newLi);
+        input.value = "";
     }
 });
 
@@ -37,6 +38,7 @@ submitBtn.addEventListener('click', function (e) {
         const newLi = document.createElement('LI');
         newLi.innerText = text;
         necessary.append(newLi);
+        input.value = "";
     }
 });
 
