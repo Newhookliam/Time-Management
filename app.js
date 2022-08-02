@@ -15,6 +15,12 @@ addNewTask.addEventListener('click', function (e) {
     popup.classList.toggle('show');
 })
 
+addNewTask.addEventListener('click', () => {
+    if (addNewTask.clicked) {
+        popup.classList.toggle('.show');
+    }
+})
+
 submitBtn.addEventListener('mouseleave', function () {
     const popup = document.querySelector('.popupText');
     popup.classList.remove('show');
@@ -28,6 +34,11 @@ submitBtn.addEventListener('click', function (e) {
         newLi.innerText = text;
         important.append(newLi);
         input.value = "";
+        radImportant.checked = "";
+        popup.classList.remove('show');
+    } else if (input.value === '') {
+        alert('Input required!!');
+        return;
     }
 });
 
@@ -39,6 +50,11 @@ submitBtn.addEventListener('click', function (e) {
         newLi.innerText = text;
         necessary.append(newLi);
         input.value = "";
+        radNecessary.checked = "";
+        popup.classList.remove('.show');
+    } else if (input.value === '') {
+        alert('Input required!!');
+        return;
     }
 });
 

@@ -39,22 +39,21 @@
     <div id="popup">
         <div class="popupText">
             <form action="/" class="formDetail">
-                <h4>Task</h4>
+                <h2>Task</h2>
                 <div>
                 <label for="important">Important</label>
-                <input type="checkbox" name="important" id="radImportant">
-                </div>
-                <div>
+                <input type="radio" name="important" id="radImportant">
                 <label for="necessary">Necessary</label>
-                <input type="checkbox" name="necessary" id="radNecessary">
+                <input type="radio" name="necessary" id="radNecessary">
                 </div>
-                <input type="text" id="detail" style="width: 100%; padding-bottom: 20%;">
+                <input type="text" id="detail" style="width: 100%; padding-bottom: 30%;">
 
                 <button class="submitBtn">Submit</button>
             </form>
         </div>
     </div>
     <!--content panel finish-->
+<div class="blurShow">
     <main id="Main">
         <aside id="contentMenu">
             <section class="newTask">
@@ -93,6 +92,7 @@
             </section>
         </div>
     </main>
+</div>
     <script src="app.js"></script>
 </body>
 </html>
