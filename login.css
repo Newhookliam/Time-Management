@@ -7,7 +7,7 @@ nav {
     width: 100%;
     min-height: 70px;
     padding-top: 20px;
-    background-color: lightgray;
+    background-color: #ade8f4;
     text-align: center;
 }
 
@@ -66,7 +66,7 @@ form button {
     justify-self: center;
     align-self: center;
     box-shadow: 2px 2px 2px 2px lightgray;
-    background-color: lightcyan;
+    background-color: #ade8f4;
     font-size: 3em;
 }
 
@@ -82,7 +82,11 @@ form button {
     width: 100vh;
     height: 100%;
     box-shadow: 2px 2px 2px 2px lightgray;
-    background-color: lightskyblue;
+    background-color: #ade8f4;
+}
+
+#formSubmit input {
+    border-radius: 10px;
 }
 
 #formSubmit button {
