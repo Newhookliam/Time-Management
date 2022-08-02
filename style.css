@@ -207,6 +207,21 @@ section {
     padding: 0;
   }
 
+#saveWork {
+    border: none; 
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#saveWork:hover {
+    box-shadow: #000 2px 2px 2px;
+    color: blue;
+    transition: ease-out 1s;
+}
+
 #Main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
