@@ -18,7 +18,7 @@ form {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 400px;
+    width: 200px;
     padding: 20px;
 }
 
@@ -91,4 +91,14 @@ form button {
 
 #formSubmit button {
     cursor: pointer;
+}
+
+#signUp {
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
