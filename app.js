@@ -35,7 +35,7 @@ submitBtn.addEventListener('click', function (e) {
         important.append(newLi);
         input.value = "";
         radImportant.checked = "";
-    } else if (input.value === '') {
+    } else if (input.value === none) {
         alert('Input required!!');
         return;
     }
@@ -50,7 +50,7 @@ submitBtn.addEventListener('click', function (e) {
         necessary.append(newLi);
         input.value = "";
         radNecessary.checked = "";
-    } else if (input.value === '') {
+    } else if (input.value === none) {
         alert('Input required!!');
         return;
     }
