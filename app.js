@@ -75,3 +75,12 @@ necessary.addEventListener('click', function (e) {
     completeTask.append(completeLi);
     return completeTask;
 });
+
+const savedPopup = document.querySelector('.savedPopup');
+const saveBtn = document.querySelector('#saveWork');
+
+savedPopup.addEventListener('click', function () {
+    if (saveBtn.clicked) {
+        savedPopup.classList.toggle('show');
+    }
+})
